@@ -22,4 +22,14 @@ $(function(){
             prevEl: '.cert-button-prev',
         },
     });
+
+    var swiper = new Swiper('.utilization-examples-list__container', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.exam-button-next',
+            prevEl: '.exam-button-prev',
+        },
+    });
 });

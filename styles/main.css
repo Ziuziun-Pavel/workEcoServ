@@ -772,6 +772,138 @@ input[type="number"] {
     width: 34rem;
 }
 
+.utilization-examples {
+    position: relative;
+}
+
+.utilization-examples-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.utilization-examples-list-item {
+    width: 55.5rem;
+    padding: 2.5rem;
+    min-height: 47.5rem;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 13px 0px rgba(30, 35, 66, 0.11);
+}
+
+.utilization-examples-item__header {
+    margin-top: 3.1rem;
+    color: #000;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 138.4%;
+}
+
+.utilization-examples-item__location {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.utilization-examples-item__location img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.utilization-examples-item__sostav {
+    margin-top: 2rem;
+}
+
+.utilization-examples-item__sostav-list {
+    width: 35rem;
+    margin-top: .8rem;
+}
+
+.utilization-examples-item__location span {
+    margin-left: .5rem;
+    color: #0B7C4F;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 144.4%;
+    text-decoration-line: underline;
+}
+
+.utilization-examples-list-item-img {
+    width: 50.2rem;
+    height: 26.8rem;
+}
+
+.utilization-examples-item__sostav-h {
+    color: #000;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 138.4%; /* 24.912px */
+}
+
+.utilization-examples-item__sostav-list {
+     margin-top: .8rem;
+     position: relative;
+    list-style-type: disc;
+ }
+
+.utilization-examples-item__sostav-list li {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 138.4%;
+}
+
+.utilization-examples-item-statistics__container {
+    margin-top: 2rem;
+    width: 40rem;
+}
+
+.utilization-examples-item__sostav-list li::marker {
+    padding-top: 1rem;
+    font-size: 7px; /* Adjust the font size to change the bullet point size */
+    font-weight: bold; /* Adjust the font-weight for bolder bullet points */
+}
+
+.utilization-examples-item-statistics__item {
+    display: flex;
+    width: 19.2rem;
+    align-items: center;
+}
+
+.utilization-examples-item-statistics__item-img {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.utilization-examples-item-statistics__item-descr {
+    margin-left: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.utilization-examples-item-statistics__item-descr h4 {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 138.4%;
+}
+
+.utilization-examples-item-statistics__container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.utilization-examples-item-statistics__item-descr h5 {
+    color: #0B7C4F;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 138.4%;
+}
+
 .utilization-prices {
     padding: 8.1rem 0;
 }
@@ -1002,6 +1134,10 @@ input[type="number"] {
     overflow: hidden;
 }
 
+.utilization-examples-list__container {
+    overflow: hidden;
+}
+
 .utilization-messages-list-item, .utilization-certificates-list-item {
     position: relative;
     width: 26.3rem;
@@ -1028,10 +1164,13 @@ input[type="number"] {
 
 .swiper-button-container {
     position: relative;
-    z-index: 999; /* Попробуйте установить значение, чтобы кнопки отображались поверх содержимого */
+    z-index: 999;
 }
 
-.mess-button-prev, .mess-button-next, .cert-button-prev, .cert-button-next {
+.mess-button-prev, .mess-button-next,
+.cert-button-prev, .cert-button-next,
+.exam-button-prev, .exam-button-next
+{
     width: 1.6rem;
     height: 1.6rem;
     position: absolute;
@@ -1042,6 +1181,16 @@ input[type="number"] {
 .mess-button-next, .cert-button-next {
     top: -23rem;
     right: -10rem;
+}
+
+.exam-button-next {
+    top: -36rem;
+    right: -5rem;
+}
+
+.exam-button-prev {
+    top: -36rem;
+    left: -6rem;
 }
 
 .mess-button-prev, .cert-button-prev {
