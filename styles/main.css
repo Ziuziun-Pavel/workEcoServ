@@ -772,6 +772,10 @@ input[type="number"] {
     width: 34rem;
 }
 
+.utilization-examples {
+    position: relative;
+}
+
 .utilization-examples-list {
     display: flex;
     justify-content: space-between;
@@ -1130,6 +1134,10 @@ input[type="number"] {
     overflow: hidden;
 }
 
+.utilization-examples-list__container {
+    overflow: hidden;
+}
+
 .utilization-messages-list-item, .utilization-certificates-list-item {
     position: relative;
     width: 26.3rem;
@@ -1156,11 +1164,11 @@ input[type="number"] {
 
 .swiper-button-container {
     position: relative;
-    z-index: 999; /* Попробуйте установить значение, чтобы кнопки отображались поверх содержимого */
+    z-index: 999;
 }
 
 .mess-button-prev, .mess-button-next,
-.cert-button-prev, .cert-button-next
+.cert-button-prev, .cert-button-next,
 .exam-button-prev, .exam-button-next
 {
     width: 1.6rem;
@@ -1170,12 +1178,22 @@ input[type="number"] {
     cursor: pointer;
 }
 
-.mess-button-next, .cert-button-next, .exam-button-next {
+.mess-button-next, .cert-button-next {
     top: -23rem;
     right: -10rem;
 }
 
-.mess-button-prev, .cert-button-prev, .exam-button-prev {
+.exam-button-next {
+    top: -36rem;
+    right: -5rem;
+}
+
+.exam-button-prev {
+    top: -36rem;
+    left: -6rem;
+}
+
+.mess-button-prev, .cert-button-prev {
     top: -23rem;
     left: -6rem;
 }

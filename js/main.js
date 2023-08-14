@@ -23,7 +23,7 @@ $(function(){
         },
     });
 
-    var swiper = new Swiper('.utilization-examples-list__conta', {
+    var swiper = new Swiper('.utilization-examples-list__container', {
         slidesPerView: 'auto',
         spaceBetween: 20,
         loop: true,
